@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+#grid-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#header {
+  width: 100%;
+  min-height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: red;
+}
+
+.header-item {
+  text-align: left;
+}
+
+.header-item a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: font-size 0.25s ease-in-out;
+  transition: font-size 0.25s ease-in-out;
+  margin: 3vh 0;
+}
+
+a:hover {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#header-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+#content {
+  width: 100%;
+  min-height: 70vh;
+  display: -ms-grid;
+  display: grid;
+}
+
+.content-grid {
+  margin: 5vh 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-image img {
+  max-width: 300px;
+}
+
+#content-1 {
+  background: url("images/pizza1.png");
+  width: 100%;
+  font-style: italic;
+  font-size: large;
+  font-weight: bold;
+}
+
+#content-2 {
+  background: url("images/pizza2.png");
+  width: 100%;
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+  background-blend-mode: lighten;
+}
+
+#google-map {
+  width: 70vw;
+  height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer {
+  min-height: 20vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 5vw;
+          column-gap: 5vw;
+  width: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #535758;
+  color: white;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: font-size 0.25s ease-in-out;
+  transition: font-size 0.25s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */
